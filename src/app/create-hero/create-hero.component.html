@@ -1,0 +1,104 @@
+<div class="row">
+  <h3 style="margin-left: 100px">Register</h3>
+  <div class="col-lg-12">
+
+    <form [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label for="name">Hero Name:</label>
+        <input type="text" class="form-control" formControlName="superHero" id="name" placeholder="HeroName">
+      </div>
+
+      <div class="form-group">
+        <label for="h">Hero Height:</label>
+        <input type="text" class="form-control" formControlName="heroHeight" id="h" placeholder="Height">
+      </div>
+      
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input type="text" formControlName="heroGender" id="gender" placeholder="gender">
+
+        <!-- <label for="female">Female:</label>
+        <input type="radio" formControlName="heroGender" id="female" value="false"> -->
+      </div>
+
+      <div class="form-group">
+        <label for="fly">Can Fly:</label>
+        <input type="text" class="form-control" formControlName="canFly" id="fly">
+      </div>
+
+      <div class="form-group">
+        <label for="fan">Fan Following:</label>
+        <input type="text" class="form-control" formControlName="fanFollowing" id="fan">
+      </div>
+
+      <div class="form-group">
+        <label for="super">Super Powers:</label>
+        <input type="text" class="form-control" formControlName="superpowers" id="super">
+      </div>
+
+      <div class="form-group">
+        <label for="fight">Fights Won:</label>
+        <input type="text" class="form-control" formControlName="fightsWon" id="fight">
+      </div>
+
+      <button class="btn btn-success" type="submit">submit</button>
+    </form>
+
+    <div id="toggleButton"></div>
+  </div>
+</div>
+
+
+<!-- <a  [routerLink]="['newHero']">Reload Page</a> -->
+<!-- <label>
+    Register Hero
+    <form [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+      <label>
+        Hero Name:
+        <input type="text" formControlName="superHero">
+      </label>
+      <br>
+      <label>
+        Hero Height:
+        <input type="text" formControlName="heroHeight">
+      </label>
+      <br>
+      <label>
+        Gender:
+        <label>
+          Male:
+          <input type="radio" formControlName="heroGender" value="true">
+        </label>
+        <label>
+          Female:
+          <input type="radio" formControlName="heroGender" value="false">
+        </label>
+      </label>
+      <br>
+      <label>
+        can Fly:
+        <input type="text" formControlName="canFly">
+      </label>
+
+      <br>
+      <label>
+        fanFollowing:
+        <input type="text" formControlName="fanFollowing">
+      </label>
+
+      <br>
+      <label>
+        superPowers:
+        <input type="text" formControlName="superpowers">
+      </label>
+
+      <br>
+      <label>
+        fightsWon:
+        <input type="text" formControlName="fightsWon">
+      </label>
+      <br>
+      <button type="submit">Click Me</button>
+    </form>
+  </label> -->

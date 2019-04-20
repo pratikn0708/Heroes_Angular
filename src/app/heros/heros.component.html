@@ -1,0 +1,23 @@
+<!-- <h3 *ngFor = "let hero of herodata">
+  {{ hero | json}}
+</h3> -->
+
+<h3 *ngFor="let hero of herodata">
+  <div class="row" >
+    <div id="herodiv1">
+      <h5>HeroName = {{ hero.superHero }}</h5>
+      <h5>HeroHeight = {{ hero.heroHeight }}</h5>
+      <h5>HeroGender = {{ hero.heroGender }}</h5>
+      <h5>SuperPowers = {{ hero.superpowers }}</h5>
+      <h5>FanFollowing = {{ hero.fanFollowing }}</h5>
+      <h5>FightsWon = {{ hero.fightsWon }}</h5>
+      <h5>canFly = {{ hero.canFly }}</h5>
+    </div>
+    <div id="herodiv2">
+      <button  (click)="onDelete(hero._id)">Delete</button><br><br>
+      <button  (click)= "onUpdate(hero)">Edit</button>
+    </div>
+  </div>
+
+  <hr>
+</h3>
